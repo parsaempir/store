@@ -1,34 +1,36 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { ProductContext } from "./ProductContext";
-import "./App.css";
+import axios from "axios";
 
 const ProductDetail = () => {
-  const { productId } = useParams();
-  const { products } = useContext(ProductContext);  // استفاده از Context برای گرفتن محصولات
+  const { id } = useParams();  
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    const foundProduct = products.find((prod) => prod.id === parseInt(productId));
-    setProduct(foundProduct);
-  }, [productId, products]);
+    axios
+      .get(`https://fakestoreapi.com/products/${id}`)
+      .then((response) => {
+        setProduct(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching product:", error);
+      });
+  }, [id]);
 
   if (!product) {
-    return <p>Loading product details...</p>;
+    return <div>Loading...</div>;
   }
 
-  return (
+  return (<>
     <div className="product-detail">
-      <img
-        src={product.image}
-        alt={product.title}
-        className="product-detail-image"
-      />
-      <h2>{product.title}</h2>
-      <p>{product.description}</p>
-      <p className="product-price">${product.price}</p>
-      <button className="buy-now-button">Buy Now</button>
+      <img src={product.image} alt={product.title} width="300" className="img" />
+
     </div>
+    <div className="product-detail">
+          <h2>{product.title}</h2>
+          <p><strong>Price: ${product.price}</strong></p>
+          <p><strong>Description:</strong>{product.description}</p>
+        </div></>
   );
 };
 

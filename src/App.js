@@ -1,21 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ProductProvider } from "./ProductContext";  // وارد کردن ProductProvider
-import ProductsList from "./ProductsList";
+import { ProductProvider } from "./ProductContext";  
+import ClothingList from "./ClothingList";
 import ProductDetail from "./ProductDetails";
 import Nav from './Nav'
 
 const App = () => {
   return (
-    <ProductProvider>
-      <Nav/>
-      <Router>
-        <Routes>
-          <Route path="/" element={<ProductsList />} />
-          <Route path="/product/:productId" element={<ProductDetail />} />
-        </Routes>
-      </Router>
-    </ProductProvider>
+    <Router>
+     <Nav/>
+    <Routes>
+      <Route path="/" element={<ClothingList />} />
+      <Route path="/product/:id" element={<ProductDetail />} />
+    </Routes>
+  </Router>
   );
 };
 
