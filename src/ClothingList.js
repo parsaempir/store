@@ -104,7 +104,7 @@ const ClothingList = () => {
       <div className="gallery-item large">
         <img src={imgon} alt="Item 1" />
       </div>
-      <div className="gallery-item medium">
+      <div className="gallery-item medium" id="img-medium">
         <img src={imgtow} alt="Item 2" />
       </div>
       <div className="gallery-item medium">
