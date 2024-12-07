@@ -18,7 +18,7 @@ return(
 <span className='top-fot'>Our Story
 </span><br/>
 <span className='top-fot'>Our Fabrice</span><br/>
-<span className='top-fot'>BYLT Retail Stores</span><br/>
+<span className='top-fot'>Parsa Retail Stores</span><br/>
 <span className='top-fot'>Athletes & Partners
 </span><br/>
 <span className='top-fot'> First Responders
@@ -72,7 +72,7 @@ return(
 
 </span>
 <span className='head-fot' id='head-fott'>SAVE UP TO 30% OFF <br/>
-<span className='top-fot'> Sign up & save with BYLT Premium Basics</span> <br/>
+<span className='top-fot'> Sign up & save with Parsa Premium Basics</span> <br/>
 <span><input type='text' className='input' placeholder='Enter you email address'></input>
  <button className='butn'>SUBMIT</button></span>
 </span>
@@ -100,7 +100,7 @@ return(
 </select>
 
 </div>
-<div className='top-head'>Copyright © 2024 , BYLT Basics. All Rights Reserved
+<div className='top-head'>Copyright © 2024 , Parsa. All Rights Reserved
 
 </div>
 </div>
