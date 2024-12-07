@@ -10,6 +10,7 @@ import img2 from './tg_image_2691972851.jpeg';
 import img3 from './tg_image_3313305930.jpeg';
 import img4 from './tg_image_3946022786.jpeg';
 import img5 from './tg_image_719113443.jpeg';
+import poster from './gonde.jpeg'
 const ClothingList = () => {
   const [clothes, setClothes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -54,6 +55,7 @@ const ClothingList = () => {
         )}
 
       </div>
+     <img src={poster} height='1030px'></img>
 <div className="sec">
  <div className="img-s"> <img src={img1} height="300px" ></img>
  <br/><span>WOMEN`S EVERYDAY PANT <br/>$20</span>
