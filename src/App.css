@@ -213,3 +213,7 @@ object-fit: cover;
   display: flex;
   justify-content: center;
 }
+.logo{
+  position: relative;
+  right: 35vw;
+}

@@ -24,7 +24,7 @@ let Navbar = () => {
    <div className='tv-navbar'>
 
  <span className='btn'><Link className='link' to='/'>Home</Link>
- <img src={Logo}height='50px'></img>
+ <img src={Logo}height='50px' className='logo'></img>
 
 
 
