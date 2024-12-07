@@ -39,7 +39,7 @@ const ClothingList = () => {
              
              <img src={item.image} alt={item.title} height='300px' className="img"/>
              <Color/>
-              <h3>{item.title}</h3>
+              <span className="font-span">{item.title}</span>
               <p className="font">Price: ${item.price}</p> 
               { }
               <Link to={`/product/${item.id}`} className="more-info-button">
