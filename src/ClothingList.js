@@ -55,17 +55,26 @@ const ClothingList = () => {
         )}
 
       </div>
-     <img src={poster} height='1030px'></img>
-<div className="sec">
- <div className="img-s"> <img src={img1} height="300px" ></img>
- <br/><span>WOMEN`S EVERYDAY PANT <br/>$20</span>
- </div>
- <div className="img-s"> <img src={img3} height="300px" ></img></div>
+     <img src={poster} height='700px'width='100%' className="img1"></img>
+     <div className="clothing-list">
+        {clothes.length === 0 ? (
+          <p>No clothing items available.</p>
+        ) : (
+          clothes.map((item) => (
+            <Link key={item.id} to={`/product/${item.id}`} className="clothing-item">
+              <div className="clothing-item-inner">
+                <img src={item.image} alt={item.title} height="300px" className="img" />
+             <br/>   <span className="font-span">{item.title}</span>
+                <p className="font"> ${item.price}</p>
+                <Color />
 
- <div className="img-s"> <img src={img4} height="300px" ></img></div>
- <div className="img-s"> <img src={img5} height="300px" ></img></div>
-  
-</div>
+              </div>
+            </Link>
+          ))
+        )}
+
+      </div>
+
     </div></>
   );
 };
