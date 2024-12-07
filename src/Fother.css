@@ -1,0 +1,41 @@
+.fot{
+
+    background-color: black;
+}
+.head-fot{
+    color: white;
+    font-size: 20px;
+ width: 10%;
+ line-height: 30px;
+margin: 0px 50px 10px 20px;}
+.top-fot{
+    color: white;
+    font-size: 12px;
+}
+.fot-out{
+    display: flex;
+    padding: 60px;
+   
+}
+#head-fott{
+       width: 30%;
+      margin: 0px 0px 0px 150px;
+}
+.input{
+    height: 45px;
+    width: 54%;
+ 
+}
+.butn{
+    padding: 15px;
+  font-weight: bold;
+  font-size: 15px;
+    background-color: #97999B;
+color: white;
+cursor: pointer;
+}
+.width-fot{
+max-width: 1500px;
+width: 100%;
+margin: auto;
+}

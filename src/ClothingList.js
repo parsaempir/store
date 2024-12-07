@@ -10,7 +10,8 @@ import img2 from './tg_image_2691972851.jpeg';
 import img3 from './tg_image_3313305930.jpeg';
 import img4 from './tg_image_3946022786.jpeg';
 import img5 from './tg_image_719113443.jpeg';
-import poster from './gonde.jpeg'
+import poster from './gonde.jpeg';
+import Fother from "./Fother";
 const ClothingList = () => {
   const [clothes, setClothes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -114,6 +115,8 @@ const ClothingList = () => {
       </div>
     
     </div>
+    <div className="fotr"></div>
+    <Fother/>
     </div>
     
   

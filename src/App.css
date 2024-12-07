@@ -326,7 +326,7 @@ margin:20px 0px 20px 16px;}
 .large {
   grid-column: span 1; 
   grid-row: span 2;
-  height: 149%;
+  height: 148.5%;
 }
 
 .medium {
@@ -340,4 +340,8 @@ margin:20px 0px 20px 16px;}
 
 .gallery-item.medium:nth-child(3) {
   height: 200%; 
+}
+.fotr{
+  height: 243px;
+  
 }
