@@ -1,10 +1,9 @@
 import './Fother.css';
-import appl from './apple.svg';
-import play from './googlepng.parspng.com-5.png';
-import ins from './instagram-brands-solid.svg';
-import tik from './tiktok-brands-solid.svg';
-import you from './youtube-brands-solid.svg';
-import fac from './square-facebook-brands-solid.svg';
+import appl from '../assets/apple.svg';
+import ins from '../assets/instagram-brands-solid.svg';
+import tik from '../assets/tiktok-brands-solid.svg';
+import you from '../assets/youtube-brands-solid.svg';
+import fac from '../assets/square-facebook-brands-solid.svg';
 function Fother(){
 
 

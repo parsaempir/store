@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ProductProvider } from "./ProductContext";  
-import ClothingList from "./ClothingList";
-import ProductDetail from "./ProductDetails";
-import Nav from './Nav'
+import ClothingList from "./components/ClothingList.js";
+import ProductDetail from "./components/ProductDetails.js";
+import Nav from './components/Nav'
 
 const App = () => {
   return (

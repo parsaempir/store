@@ -2,16 +2,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Color from './ColorCircles';
-import imgon from './tg_image_2218913166.jpeg';
-import imgtow from './tg_image_2324303306.jpeg';
-import imgtri from './tg_image_2677247921.jpeg';
-import img1 from './tg_image_2192820976.jpeg';
-import img2 from './tg_image_2691972851.jpeg';
-import img3 from './tg_image_3313305930.jpeg';
-import img4 from './tg_image_3946022786.jpeg';
-import img5 from './tg_image_719113443.jpeg';
-import poster from './gonde.jpeg';
+import imgon from '../assets/tg_image_2218913166.jpeg';
+import imgtow from '../assets/tg_image_2324303306.jpeg';
+import imgtri from '../assets/tg_image_2677247921.jpeg';
+import img3 from '../assets/tg_image_3313305930.jpeg';
+import img4 from '../assets/tg_image_3946022786.jpeg';
+import img5 from '../assets/tg_image_719113443.jpeg';
+import poster from '../assets/gonde.jpeg';
 import Fother from "./Fother";
+import '../App.css'
 const ClothingList = () => {
   const [clothes, setClothes] = useState([]);
   const [loading, setLoading] = useState(true);

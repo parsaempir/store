@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
-import './App.css';
-import Serch from './serch-mood.png'
-import { Link } from 'react-router-dom';
-import menu from './bars-solid (2).svg';
-import Logo from './PARSA_logo_high_res.png';
-import Vid from './Vid.mp4';
-import user from './user.png';
-import bag from './bag.png'
+import '../App.css';
+import menu from '../assets/bars-solid (2).svg';
+import Logo from '../assets/PARSA_logo_high_res.png';
+import Vid from '../assets/Vid.mp4';
+import user from '../assets/user.png';
+import bag from '../assets/bag.png'
 let Navbar = () => {
   let [scrolled, setScrolled] = useState(false);
   let [menuOpen, setMenuOpen] = useState(false);
