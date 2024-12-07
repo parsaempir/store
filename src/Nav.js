@@ -23,13 +23,11 @@ let Navbar = () => {
       <div className='NavOnwer'>
    <div className='tv-navbar'>
 
- <span className='btn'><Link className='link' to='/'>Home</Link>
+ <span className='btn'>
  <img src={Logo}height='50px' className='logo'></img>
 
 
 
-<button>Login</button>
-<button>sign up</button>
 </span>
 
 <span className='menu-span'><img src={menu} height='30px' className='menu'></img></span>

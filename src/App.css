@@ -45,25 +45,10 @@ padding-top: 10px;
 }
 .btn{
   display: flex;
-  justify-content: end;
-gap: 30px;
+  justify-content: center;
+
 }
-.btn button{
-  background-color: #FF5733;
-  color: white; 
-  padding: 12px 24px; 
-  border-radius: 8px; 
-  font-size: 16px; 
-  text-align: center; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease, transform 0.2s ease; 
-  border: none;
-  
-}
-.btn button:hover{
-  background-color: #C0392B; 
-  transform: scale(1.05);
-}
+
 .header{
   height:700px;
 }
@@ -212,8 +197,4 @@ object-fit: cover;
   bottom: 300px;
   display: flex;
   justify-content: center;
-}
-.logo{
-  position: relative;
-  right: 35vw;
 }
