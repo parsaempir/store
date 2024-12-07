@@ -9,7 +9,7 @@ import user from './user.png';
 import bag from './bag.png'
 let Navbar = () => {
   let [scrolled, setScrolled] = useState(false);
-
+  let [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     let handleScroll = () => {
       setScrolled(window.scrollY > 1);
@@ -45,10 +45,31 @@ let Navbar = () => {
 </div>
 
 </div>
-<span className='menu-span'><img src={menu} height='30px' className='menu'></img>
-</span>
 </div>
+<span className='menu-span'>
+            <img
+              src={menu}
+              height='30px'
+              className='menu'
+              alt='Menu'
+              onClick={() => setMenuOpen(!menuOpen)} 
+            />
+          </span>
     </nav>
+    {menuOpen && ( 
+        <div className='dropdown-menu'>
+          <a className='dropdown-link'>TOPS</a>
+          <a className='dropdown-link'>BOTTOMS</a>
+          <a className='dropdown-link'>ACCESSORIES</a>
+          <a className='dropdown-link'>OUTERWEAR</a>
+          <a className='dropdown-link'>
+            <img src={bag} height='20px' alt='Bag' />
+          </a>
+          <a className='dropdown-link'>
+            <img src={user} height='20px' className='user' alt='User' />
+          </a>
+        </div>
+      )}
     <div className='header'>
       <video src={Vid} className='vid' type="video/mp4" autoPlay 
         muted 
