@@ -486,12 +486,12 @@ justify-content: start;
   }
   .image-button,
   .image-button1 {
-    padding: 8px 15px 8px 20px; /* مقدار مناسب برای موبایل */
-    font-size: 0.9rem; /* تغییر اندازه متن در نمایشگرهای کوچک */
+    padding: 8px 15px 8px 20px; 
+    font-size: 0.9rem; 
   }
 }
 .image-container {
-  position: relative; /* موقعیت‌دهی برای قرارگیری متن و دکمه‌ها روی تصویر */
+  position: relative; 
   display: inline-block;
   height: auto;
 }
@@ -561,42 +561,42 @@ flex-direction: column;
 }
 @media (max-width: 768px) {
   .clothing-list {
-    flex-wrap: wrap; /* تصاویر مرتب زیر هم قرار بگیرند */
+    flex-wrap: wrap; 
     gap: 10px;
   }
 
   .clothing-item {
-    width: 100%; /* عرض هر آیتم به صورت کامل باشد */
-    margin: 0 auto; /* وسط‌چین کردن */
+    width: 100%; 
+    margin: 0 auto;
   }
 
   .img {
-    position: static; /* رفع مشکل برخورد */
+    position: static; 
     height: auto;
-    width: 100%; /* تنظیم اندازه به صورت ریسپانسیو */
+    width: 100%; 
   }
 
   .font-span {
-    font-size: 12px; /* کوچک کردن فونت برای جلوگیری از شکستگی */
+    font-size: 12px; 
   }
 
   .image-container {
     text-align: center;
-    padding: 10px; /* فضای اطراف کم‌تر شود */
+    padding: 10px; 
   }
 
   .image-button {
-    font-size: 12px; /* اندازه دکمه کوچک‌تر شود */
+    font-size: 12px;
     padding: 5px 10px;
   }
 
   .gallery {
-    grid-template-columns: 1fr; /* آیتم‌های گالری زیر هم قرار بگیرند */
+    grid-template-columns: 1fr; 
     gap: 10px;
   }
 
   .gallery-item {
-    height: auto; /* جلوگیری از شکستن تصاویر */
+    height: auto; 
   }
 
   .img1 {
@@ -605,25 +605,24 @@ flex-direction: column;
   }
 
   .img-try {
-    grid-template-columns: 1fr; /* تصاویر گرید یکی‌یکی زیر هم قرار گیرند */
+    grid-template-columns: 1fr; 
   }
 
   .img-try1 img {
-    width: 90%; /* تنظیم عرض مناسب */
-    margin: 0 auto; /* وسط‌چین شدن تصاویر */
+    width: 90%; 
+    margin: 0 auto; 
   }
 
   .herder-div {
-    height: auto; /* ارتفاع اتوماتیک */
-    font-size: 14px;
+    height: auto; 
   }
 
   .dropdown-menu {
-    width: 100%; /* برای سازگاری با نمایشگر کوچک */
+    width: 100%; 
   }
 
   .inp {
-    width: 100%; /* فیلد ورودی به صورت کامل */
+    width: 100%; 
     font-size: 14px;
   }
 }
