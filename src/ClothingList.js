@@ -92,7 +92,11 @@ const ClothingList = () => {
             <Link key={item.id} to={`/product/${item.id}`} className="clothing-item">
               <div className="clothing-item-inner">
                 <img src={item.image} alt={item.title} height="300px" className="img" />
-             <br/>   <span className="font-span">{item.title}</span>
+             <br/>   <span className="font-span">  {item.title
+    .split(/\s+/) 
+    .slice(0, 3) 
+    .join(" ")    
+    + (item.title.split(/\s+/).length > 3 ? "..." : "")}</span>
                 <p className="font"> ${item.price}</p>
                 <Color />
 
