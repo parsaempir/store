@@ -44,26 +44,24 @@ const ClothingList = () => {
             <Link key={item.id} to={`/product/${item.id}`} className="clothing-item">
               <div className="clothing-item-inner">
                 <img src={item.image} alt={item.title} height="300px" className="img" />
-                <Color />
-                <span className="font-span">{item.title}</span>
-            
-              
+             <br/>   <span className="font-span">{item.title}</span>
                 <p className="font"> ${item.price}</p>
+                <Color />
+
               </div>
             </Link>
           ))
         )}
 
       </div>
-<Color/>
 <div className="sec">
- <div className="img-s"> <img src={img1} height="300px" className="img"></img>
+ <div className="img-s"> <img src={img1} height="300px" ></img>
  <br/><span>WOMEN`S EVERYDAY PANT <br/>$20</span>
  </div>
- <div className="img-s"> <img src={img3} height="300px" className="img"></img></div>
+ <div className="img-s"> <img src={img3} height="300px" ></img></div>
 
- <div className="img-s"> <img src={img4} height="300px" className="img"></img></div>
- <div className="img-s"> <img src={img5} height="300px" className="img"></img></div>
+ <div className="img-s"> <img src={img4} height="300px" ></img></div>
+ <div className="img-s"> <img src={img5} height="300px" ></img></div>
   
 </div>
     </div></>
