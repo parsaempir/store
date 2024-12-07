@@ -55,7 +55,7 @@ const ClothingList = () => {
         )}
 
       </div>
-     <img src={poster} height='700px'width='100%' className="img1"></img>
+     <img src={poster}  className="img1"></img>
      <div className="clothing-list">
         {clothes.length === 0 ? (
           <p>No clothing items available.</p>
@@ -74,8 +74,36 @@ const ClothingList = () => {
         )}
 
       </div>
+      <div className="img-try">
 
-    </div></>
+<img src={img3} height='610px'></img>
+<img src={img4} height='610px'></img>
+<img src={img5} height='610px'></img>
+
+    </div>
+    <div className="clothing-list">
+        {clothes.length === 0 ? (
+          <p>No clothing items available.</p>
+        ) : (
+          clothes.map((item) => (
+            <Link key={item.id} to={`/product/${item.id}`} className="clothing-item">
+              <div className="clothing-item-inner">
+                <img src={item.image} alt={item.title} height="300px" className="img" />
+             <br/>   <span className="font-span">{item.title}</span>
+                <p className="font"> ${item.price}</p>
+                <Color />
+
+              </div>
+            </Link>
+          ))
+        )}
+
+      </div>
+    </div>
+    
+  
+    
+    </>
   );
 };
 
