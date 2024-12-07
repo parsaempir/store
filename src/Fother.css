@@ -39,3 +39,29 @@ max-width: 1500px;
 width: 100%;
 margin: auto;
 }
+.logo-svg{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: 80px;
+    width: 500px;
+}
+.select{
+    display: flex;
+    justify-content: end;
+}
+select{
+    padding: 5px 20px 5px 20px;
+border-radius: 5px;
+width: 12%;
+text-align: center;
+margin-right: 120px;
+position: relative;
+bottom: 20px;
+}
+.top-head{
+    color: white;
+    margin-left: 80px;
+    font-size: 12px;
+    height: 70px;
+}

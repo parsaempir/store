@@ -1,4 +1,10 @@
-import './Fother.css'
+import './Fother.css';
+import appl from './apple.svg';
+import play from './googlepng.parspng.com-5.png';
+import ins from './instagram-brands-solid.svg';
+import tik from './tiktok-brands-solid.svg';
+import you from './youtube-brands-solid.svg';
+import fac from './square-facebook-brands-solid.svg';
 function Fother(){
 
 
@@ -20,8 +26,8 @@ return(
 <span className='top-fot'>BYLT+ Rewards
 </span>
 </span><br/>
-<span className='head-fot'>How it's BYLT <br/>
-<span className='top-fot'>Frequently Asked Questions
+<span className='head-fot'>How it's Parsa <br/>
+<span className='top-fot'>Frequently Asked 
 
 </span><br/>
 <span className='top-fot'>Returns & Exchanges
@@ -72,7 +78,31 @@ return(
 </span>
 </div>
 
+<div className='logo-svg'>
 
+<img src={appl}></img>
+<img src={ins} height='25px'></img>
+<img src={fac} height='25px'></img>
+<img src={tik} height='25px'></img>
+<img src={you} height='25px'></img>
+</div>
+<div className='select'>
+<select>
+<option>Germany</option>
+<option>Iran</option>
+<option>Itali</option>
+<option>Usa</option>
+<option>Turki</option>
+<option>Paris</option>
+<option>Qinda</option>
+<option>English</option>
+
+</select>
+
+</div>
+<div className='top-head'>Copyright © 2024 , BYLT Basics. All Rights Reserved
+
+</div>
 </div>
 
 </div>
