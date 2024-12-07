@@ -75,10 +75,12 @@ const ClothingList = () => {
 
       </div>
       <div className="img-try">
+<div className="img-try1"><img src={img3} ></img></div>
 
-<img src={img3} height='610px'></img>
-<img src={img4} height='610px'></img>
-<img src={img5} height='610px'></img>
+<div className="img-try1"><img src={img4}></img></div>
+
+<div className="img-try1"><img src={img5} ></img></div>
+
 
     </div>
     <div className="clothing-list">
