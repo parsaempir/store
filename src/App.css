@@ -69,8 +69,7 @@ padding-top: 10px;
  
 }
 .img{
-  position: relative;
-  left: 50px;
+
 }
 .clothing-item:hover{
   background-color: white;
@@ -343,5 +342,14 @@ margin:20px 0px 20px 16px;}
 }
 .fotr{
   height: 243px;
-  
+
+}
+@media (max-width:1000px) {
+  #padid{
+    display: none;
+  }
+  .clothing-list{
+    display: flex;
+    flex-direction: column;
+  }
 }

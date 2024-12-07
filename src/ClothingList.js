@@ -57,7 +57,7 @@ const ClothingList = () => {
 
       </div>
      <img src={poster}  className="img1"></img>
-     <div className="clothing-list">
+     <div className="clothing-list" id="padid">
         {clothes.length === 0 ? (
           <p>No clothing items available.</p>
         ) : (
@@ -84,7 +84,7 @@ const ClothingList = () => {
 
 
     </div>
-    <div className="clothing-list">
+    <div className="clothing-list" id="padid">
         {clothes.length === 0 ? (
           <p>No clothing items available.</p>
         ) : (
