@@ -39,7 +39,9 @@ let Navbar = () => {
 </div>
     </nav>
     <div className='header'>
-      <video src={Vid} className='vid' type="video/mp4" playing loop ></video>
+      <video src={Vid} className='vid' type="video/mp4" autoPlay 
+        muted 
+        loop  ></video>
     </div>
   </>
   );
