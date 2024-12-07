@@ -4,7 +4,9 @@ import Serch from './serch-mood.png'
 import { Link } from 'react-router-dom';
 import menu from './bars-solid (2).svg';
 import Logo from './PARSA_logo_high_res.png';
-import Vid from './Vid.mp4'
+import Vid from './Vid.mp4';
+import user from './user.png';
+import bag from './bag.png'
 let Navbar = () => {
   let [scrolled, setScrolled] = useState(false);
 
@@ -18,22 +20,33 @@ let Navbar = () => {
   }, []);
 
   return (<>
- <div className='herder-div'></div>
+ <div className='herder-div'>FREE SHIPPING ON ORDERS $75+</div>
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className='NavOnwer'>
    <div className='tv-navbar'>
+   <div>
+   
 
- <span className='btn'>
- <img src={Logo}height='50px' className='logo'></img>
-
-
+    <div className='head-d'>
+      
+<span className='head-a'>
+  <a className='a-link'>TOPS</a>
+  <a className='a-link'>BOTTOMS</a>
+  <a className='a-link'>ACCESSORIES</a>
+  <a className='a-link'>OUTERWEAR</a>
 
 </span>
-
-<span className='menu-span'><img src={menu} height='30px' className='menu'></img></span>
-
+<span className='logo'><img src={Logo}height='60px' ></img></span>
+<span className='logo-png'>
+<img src={bag} height='25px'></img>
+<img src={user} height='25px'></img></span>
+</div>
 
 </div>
+
+</div>
+<span className='menu-span'><img src={menu} height='30px' className='menu'></img>
+</span>
 </div>
     </nav>
     <div className='header'>
