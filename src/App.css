@@ -344,15 +344,7 @@ margin:20px 0px 20px 16px;}
   height: 243px;
 
 }
-@media (max-width:500px) {
-  #padid{
-    display: none;
-  }
-  .clothing-list{
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 @media (max-width: 600px) {
   .navbar {
     height: auto; 
@@ -443,6 +435,32 @@ justify-content: start;
 
 @media (min-width: 601px) {
   .dropdown-menu {
-    display: none; /* مخفی کردن منو در نمایشگرهای بزرگ */
+    display: none; 
+  }
+}
+@media (max-width: 600px) {
+  .clothing-list {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+  }
+
+  .clothing-item {
+    width: 90%; 
+    padding: 10px; 
+  }
+
+  .clothing-item img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .font-span {
+    font-size: 14px; 
+  }
+
+  .font {
+    font-size: 16px; 
   }
 }
