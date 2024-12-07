@@ -241,3 +241,32 @@ gap: 20px;
 text-decoration: none;
 color: black;
 }
+.head-img{
+display: flex;
+
+}
+
+.imgon{
+height: 1000px;
+}
+.imgtow{
+height: 300px;
+width: 58%;
+}
+.imgtri{
+height: 500px;
+width: 100%;
+}
+.img-s{
+  
+  box-sizing: border-box; 
+  padding:60px;
+  
+  border-radius: 8px;
+  background-color: white;
+}
+.sec{
+  display: flex;
+justify-content: space-between;
+
+}

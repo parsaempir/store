@@ -2,14 +2,21 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Color from './ColorCircles';
-
+import imgon from './tg_image_2218913166.jpeg';
+import imgtow from './tg_image_2324303306.jpeg';
+import imgtri from './tg_image_2677247921.jpeg';
+import img1 from './tg_image_2192820976.jpeg';
+import img2 from './tg_image_2691972851.jpeg';
+import img3 from './tg_image_3313305930.jpeg';
+import img4 from './tg_image_3946022786.jpeg';
+import img5 from './tg_image_719113443.jpeg';
 const ClothingList = () => {
   const [clothes, setClothes] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
-      .get("https://fakestoreapi.com/products?limit=20")
+      .get("https://fakestoreapi.com/products?limit=18")
       .then((response) => {
         const filteredClothes = response.data.filter(item =>
           item.category.toLowerCase().includes("clothing")
@@ -27,7 +34,7 @@ const ClothingList = () => {
     return <div>Loading...</div>;
   }
 
-  return (
+  return (<>
     <div>
       <div className="clothing-list">
         {clothes.length === 0 ? (
@@ -46,8 +53,20 @@ const ClothingList = () => {
             </Link>
           ))
         )}
+
       </div>
-    </div>
+<Color/>
+<div className="sec">
+ <div className="img-s"> <img src={img1} height="300px" className="img"></img>
+ <br/><span>WOMEN`S EVERYDAY PANT <br/>$20</span>
+ </div>
+ <div className="img-s"> <img src={img3} height="300px" className="img"></img></div>
+
+ <div className="img-s"> <img src={img4} height="300px" className="img"></img></div>
+ <div className="img-s"> <img src={img5} height="300px" className="img"></img></div>
+  
+</div>
+    </div></>
   );
 };
 
