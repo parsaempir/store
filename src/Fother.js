@@ -23,7 +23,7 @@ return(
 </span><br/>
 <span className='top-fot'> First Responders
 </span><br/>
-<span className='top-fot'>BYLT+ Rewards
+<span className='top-fot'>Parsa+ Rewards
 </span>
 </span><br/>
 <span className='head-fot'>How it's Parsa <br/>
