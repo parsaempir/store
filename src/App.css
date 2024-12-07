@@ -311,7 +311,7 @@ padding: 20px;
   height: auto; 
   object-fit: cover; 
   display: block; 
-margin:40px 0px 40px 16px;}
+margin:40px 0px 0px 16px;}
 
 
 .gallery {
@@ -407,6 +407,7 @@ margin:40px 0px 40px 16px;}
     position: relative;
     left: 0px;
   }
+
 }
 
 .dropdown-menu {
@@ -482,5 +483,147 @@ justify-content: start;
 
   .font {
     font-size: 16px; 
+  }
+  .image-button,
+  .image-button1 {
+    padding: 8px 15px 8px 20px; /* مقدار مناسب برای موبایل */
+    font-size: 0.9rem; /* تغییر اندازه متن در نمایشگرهای کوچک */
+  }
+}
+.image-container {
+  position: relative; /* موقعیت‌دهی برای قرارگیری متن و دکمه‌ها روی تصویر */
+  display: inline-block;
+  height: auto;
+}
+
+
+
+.overlay-content {
+  position: absolute; 
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay-text {
+  font-size: 3rem;
+  margin: 20px; 
+
+}
+
+
+
+.image-button {
+  padding: 15px 40px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.image-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.image-button1 {
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 35%;
+}
+.head-btn{
+position: relative;
+bottom: 150px;
+left: 20px;
+display: flex;
+flex-direction: column;
+}
+.leb{
+  color: black;
+  font-weight: bold;
+  margin: 0px 0px 20px 10px;
+}
+@media (max-width: 768px) {
+  .clothing-list {
+    flex-wrap: wrap; /* تصاویر مرتب زیر هم قرار بگیرند */
+    gap: 10px;
+  }
+
+  .clothing-item {
+    width: 100%; /* عرض هر آیتم به صورت کامل باشد */
+    margin: 0 auto; /* وسط‌چین کردن */
+  }
+
+  .img {
+    position: static; /* رفع مشکل برخورد */
+    height: auto;
+    width: 100%; /* تنظیم اندازه به صورت ریسپانسیو */
+  }
+
+  .font-span {
+    font-size: 12px; /* کوچک کردن فونت برای جلوگیری از شکستگی */
+  }
+
+  .image-container {
+    text-align: center;
+    padding: 10px; /* فضای اطراف کم‌تر شود */
+  }
+
+  .image-button {
+    font-size: 12px; /* اندازه دکمه کوچک‌تر شود */
+    padding: 5px 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* آیتم‌های گالری زیر هم قرار بگیرند */
+    gap: 10px;
+  }
+
+  .gallery-item {
+    height: auto; /* جلوگیری از شکستن تصاویر */
+  }
+
+  .img1 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .img-try {
+    grid-template-columns: 1fr; /* تصاویر گرید یکی‌یکی زیر هم قرار گیرند */
+  }
+
+  .img-try1 img {
+    width: 90%; /* تنظیم عرض مناسب */
+    margin: 0 auto; /* وسط‌چین شدن تصاویر */
+  }
+
+  .herder-div {
+    height: auto; /* ارتفاع اتوماتیک */
+    font-size: 14px;
+  }
+
+  .dropdown-menu {
+    width: 100%; /* برای سازگاری با نمایشگر کوچک */
+  }
+
+  .inp {
+    width: 100%; /* فیلد ورودی به صورت کامل */
+    font-size: 14px;
   }
 }

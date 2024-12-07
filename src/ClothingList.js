@@ -56,7 +56,16 @@ const ClothingList = () => {
         )}
 
       </div>
-     <img src={poster}  className="img1"></img>
+      <div className="image-container">
+      <img src={poster}  className="img1" />
+      <div className="overlay-content">
+        <h1 className="overlay-text">OUTERWEAR FOR EVERY SEASON</h1>
+        <div className="button-group">
+          <button className="image-button">SHOP 30% OFF</button>
+       
+        </div>
+      </div>
+    </div>
      <div className="clothing-list" id="padid">
         {clothes.length === 0 ? (
           <p>No clothing items available.</p>
@@ -76,11 +85,30 @@ const ClothingList = () => {
 
       </div>
       <div className="img-try">
-<div className="img-try1"><img src={img3} ></img></div>
+<div className="img-try1"><img src={img3} ></img>
+<div className="head-btn">
+<span className="leb">BOTTOMS</span>
 
-<div className="img-try1"><img src={img4}></img></div>
+          <button className="image-button1">SHOP 30% OFF</button>
+       
+        </div>
+</div>
 
-<div className="img-try1"><img src={img5} ></img></div>
+<div className="img-try1"><img src={img4}></img>
+<div className="head-btn">
+<span className="leb">TOPS</span>
+          <button className="image-button1">SHOP 30% OFF</button>
+       
+        </div>
+</div>
+
+<div className="img-try1"><img src={img5} ></img>
+<div className="head-btn">
+<span className="leb">ACCESSORIES</span>
+          <button className="image-button1">SHOP 30% OFF</button>
+       
+        </div>
+</div>
 
 
     </div>
