@@ -281,8 +281,34 @@ padding: 20px;
 }
 .img-try{
   display: flex;
-  justify-content: space-between;
   padding: 15px;
  margin: 0px 0px 25px 0px;
 
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* سه ستون مساوی */
+  gap: 15px; /* فاصله بین آیتم‌ها */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden; 
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.gallery-item.large {
+  grid-column: span 2; /* دو ستون را اشغال کند */
+  grid-row: span 2; /* دو ردیف را اشغال کند */
+}
+
+.gallery-item.medium {
+  grid-column: span 1; /* یک ستون */
+  grid-row: span 1; /* یک ردیف */
+}
+

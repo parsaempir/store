@@ -99,6 +99,19 @@ const ClothingList = () => {
         )}
 
       </div>
+
+      <div className="gallery">
+      <div className="gallery-item large">
+        <img src={imgon} alt="Item 1" />
+      </div>
+      <div className="gallery-item medium">
+        <img src={imgtow} alt="Item 2" />
+      </div>
+      <div className="gallery-item medium">
+        <img src={imgtri}alt="Item 3" />
+      </div>
+    
+    </div>
     </div>
     
   
