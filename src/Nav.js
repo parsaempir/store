@@ -36,10 +36,10 @@ let Navbar = () => {
   <a className='a-link'>OUTERWEAR</a>
 
 </span>
-<span className='logo'><img src={Logo}height='60px' ></img></span>
+<span className='logo'><img src={Logo}height='69.5px' ></img></span>
 <span className='logo-png'>
 <img src={bag} height='25px'></img>
-<img src={user} height='25px'></img></span>
+<img src={user} height='25px' className='user'></img></span>
 </div>
 
 </div>
