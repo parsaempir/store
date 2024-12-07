@@ -26,7 +26,7 @@ let Navbar = () => {
  <span className='btn'><Link className='link' to='/'>Home</Link>
  <img src={Logo}height='50px'></img>
 
- <span> <input type='text' className='inp' placeholder='Search for itemms'></input><img src={Serch} className='serch' height='20px'></img></span>
+
 
 <button>Login</button>
 <button>sign up</button>
@@ -41,7 +41,10 @@ let Navbar = () => {
     <div className='header'>
       <video src={Vid} className='vid' type="video/mp4" autoPlay 
         muted 
-        loop  ></video>
+        loop  ></video> 
+        <span className='span-head'> <input type='text' className='inp' placeholder='Search for itemms'></input>
+        <img src={Serch} className='serch' height='20px'></img>
+        </span>
     </div>
   </>
   );
