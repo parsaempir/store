@@ -42,8 +42,8 @@ let Navbar = () => {
       <video src={Vid} className='vid' type="video/mp4" autoPlay 
         muted 
         loop  ></video> 
-        <span className='span-head'> <input type='text' className='inp' placeholder='Search for itemms'></input>
-        <img src={Serch} className='serch' height='20px'></img>
+        <span className='span-head'> <input type='text' className='inp' placeholder='Search'></input>
+       
         </span>
     </div>
   </>
