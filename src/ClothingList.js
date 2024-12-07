@@ -41,7 +41,7 @@ const ClothingList = () => {
                 <span className="font-span">{item.title}</span>
             
               
-                <p className="font">Price: ${item.price}</p>
+                <p className="font"> ${item.price}</p>
               </div>
             </Link>
           ))
