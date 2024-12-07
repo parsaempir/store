@@ -1,7 +1,5 @@
 body{
-  max-width: 1550px;
-  margin: auto;
-width: 100%;
+
 
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 background: linear-gradient(
@@ -14,8 +12,8 @@ background: linear-gradient(
 }
 
 .navbar {
- max-width: 1550px;
-margin: auto;
+/* max-width: 1550px;
+margin: auto;*/
   position: fixed;
   background: linear-gradient(
     135deg, 
@@ -228,6 +226,7 @@ right: 10vw;
   display: flex;
   justify-content: center;
   font-weight: bold;
+  align-items: center;
 }
 .logo-png{
   display: flex;
